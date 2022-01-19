@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2? family= Outfit:wght@300;400;600 & display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --VerydarkblueMainBG: hsl(217, 54%, 11%);
+    --VerydarkblueCardBG: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--VerydarkblueMainBG);
+}
+
+main{
+    width: 330px;
+    height: 550px;
+    margin: 65px auto;
+    background-color: var(--VerydarkblueCardBG);
+    border: 1px;
+    border-radius: 15px;
+}
+
+.ntf-container{
+    width: 280px;
+    height: 500px;
+    margin: auto;
+    padding-top: 25px;
+    border: 1px;
+    border-radius: 15px;
+}
+
+/*--------------- Image Container ---------------*/
+.container-image{
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.main-image{
+    background-image: url(images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    min-height: 18.75rem;
+    width: 100%;
+}
+
+.color-image{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 19rem;
+    height: auto;
+    background-image: none;
+}
+
+.color-image:hover{
+    background-image: url(images/icon-view.svg);
+    background-color: var(--Cyan);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20% 20%;
+    opacity: 0.5;
+    transition: background-color ease-in-out 0.3s;
+}
+
+
+/*--------------- Container Title ---------------*/
+
+.title-container{
+    padding-top: 30px;
+    width: auto;
+}
+
+.title-container h1{
+    font-size: 20px;
+    color: var(--White);
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: var(--Cyan);
+}
+
+.title-container p{
+    color: var(--Softblue);
+    font-size: 17px;
+}
+
+
+/*--------------- Timing  and Pricing ---------------*/
+.time-price{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 12px;
+    padding-top: 20px;
+}
+
+.price{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Cyan);
+}
+
+.image-etherum{
+    background-image: url(images/icon-ethereum.svg);
+    width: 11px;
+    height: 18px;
+}
+
+.price p{
+    font-size: 15px;
+}
+
+.time{
+    width: 95px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-clock{
+    background-image: url(images/icon-clock.svg);
+    width: 17px;
+    height: 17px;
+}
+
+.time p{
+    font-size: 15px;
+    color: var(--Softblue);
+}
+
+/*--------------- Author ---------------*/
+.author{
+    width: 230px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.author h3{
+    padding-top: 8px;
+    font-size: 15px;
+    color: var(--Softblue);
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    border: 1px white solid;
+    border-radius: 50%;
+}
+
+span{
+    color: var(--White);
+    cursor: pointer;
+}
+
+span:hover{
+    color: var(--Cyan);
+}
+
+/*--------------- footer ---------------*/
+
+footer{
+    margin-bottom: 20px;
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+/*--------------- MEDIA QUERIS ---------------*/
+
+@media screen and (min-width: 1200px) {
+    main{
+        width: 355px;
+        height: 600px;
+    }
+
+    .ntf-container{
+        width: 305px;
+        height: 540px;
+    }
+
+    .container-image{
+        height: 305px;
+    }
+
+    .time-price{
+        padding-top: 30px;
+        padding-bottom: 22px;
+    }
+
+    .author{
+        padding-top: 20px;
+    }
+}
