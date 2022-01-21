@@ -124,7 +124,7 @@ h1:hover{
     height: 18px;
 }
 
-.price p{
+.price h2{
     font-size: 15px;
 }
 
@@ -141,7 +141,7 @@ h1:hover{
     height: 17px;
 }
 
-.time p{
+.time h3{
     font-size: 15px;
     color: var(--Softblue);
 }
@@ -203,7 +203,7 @@ footer{
 
     .ntf-container{
         width: 305px;
-        height: 540px;
+        height: 560px;
     }
 
     .container-image{
@@ -217,5 +217,6 @@ footer{
 
     .author{
         padding-top: 20px;
+        width: 240px;
     }
 }
